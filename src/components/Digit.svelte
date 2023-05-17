@@ -60,6 +60,8 @@
 
 		position: absolute;
 		top: var(--top);
+
+		will-change: left right;
 	}
 
 	.left {
