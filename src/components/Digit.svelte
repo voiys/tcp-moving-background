@@ -12,7 +12,7 @@
 
 	const isPhone = window.innerWidth < 768;
 
-	const durations = isPhone ? [2, 2, 4, 4, 6, 8] : [8, 8, 8, 16, 16, 32];
+	const durations = isPhone ? [2, 4, 4, 4, 6, 8] : [8, 8, 8, 16, 16, 32];
 
 	const duration = `${
 		durations[
