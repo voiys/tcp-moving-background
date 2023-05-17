@@ -1,9 +1,9 @@
 <script>
-	import { onMount } from 'svelte';
-	import Digit from './components/Digit.svelte';
 	import Digits from './components/Digits.svelte';
 
-	const arr = Array.from({ length: 20 });
+	const isPhone = window.innerWidth < 768;
+
+	const arr = Array.from({ length: isPhone ? 10 : 20 });
 </script>
 
 <div class="container">

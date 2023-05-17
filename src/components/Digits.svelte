@@ -17,7 +17,7 @@
 		}
 	});
 
-	let digits = Array.from({ length: isPhone ? 25 : 40 })
+	let digits = Array.from({ length: isPhone ? 15 : 40 })
 		.map((_) => Math.random())
 		.map((item) => (item > 0.5 ? '1' : '0'));
 </script>
