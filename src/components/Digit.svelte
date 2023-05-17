@@ -14,6 +14,8 @@
 
 	const durations = isPhone ? [2, 4, 4, 4, 6, 8] : [8, 8, 8, 16, 16, 32];
 
+	const easings = ['ease-in-out', 'ease-in', 'ease-out'];
+
 	const duration = `${
 		durations[
 			c.integer({
@@ -23,7 +25,13 @@
 		]
 	}s`;
 
-	const easing = 'linear';
+	const easing =
+		easings[
+			c.integer({
+				min: 0,
+				max: easings.length - 1,
+			})
+		];
 
 	const offset = `${c.integer({
 		min: -100,
